@@ -36,6 +36,12 @@
     23. Error CSS
     24. Login CSS
     00. Footer CSS
+    Sayfa: 10657 - Dilek ve Öneri Formu- Proje Formu CSS
+    Sayfa: 10651 - Yeni Pano CSS
+    Sayfa: 10704 - İdari Personel Profili CSS
+    Sayfa: 10831 - AKADEMİK BİRİMLER ORGANİZASYON YAPISI CSS
+    Sayfa: 10866 - BİRİM AĞACI CSS
+    Sayfa: 10928 - HABER SAYFASI CSS
 
 
 **********************************************/
@@ -10138,232 +10144,6 @@ p.checkout-coupon input[type=text]:focus {
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-}
-
-#header {
-  background-color: #fff;
-}
-
-#main-header {
-  background-color: #253849;
-  display: flex;
-  justify-content: space-between;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-header nav ul {
-  display: flex;
-  gap: 12px;
-  max-width: 24%;
-  width: 100%;
-}
-
-header nav ul.secondary-nav {
-  justify-content: flex-end;
-  margin-right: 18px;
-}
-
-header nav ul li {
-  margin: 0 12px;
-}
-
-header nav ul li:first-child {
-  margin-left: 0;
-}
-
-header nav ul li:last-child {
-  margin-right: 0;
-}
-
-header nav ul li a {
-  color: #009abf;
-}
-
-header nav ul li.bold-title a {
-  font-weight: 700;
-  text-transform: uppercase;
-  border-right: 1px solid gainsboro;
-}
-
-header nav ul li.meta-title a {
-  color: #141414;
-  font-size: 12px;
-}
-
-.neu-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  position: relative;
-}
-
-.neu-menu-item {
-  margin-right: 12px;
-  padding: 24px 18px;
-  cursor: pointer;
-  transition: 0.2s;
-  text-transform: uppercase;
-  font-size: 12px;
-  position: relative;
-}
-
-.neu-menu-item:hover {
-  background-color: #fff;
-}
-
-.neu-menu-item:hover a {
-  color: #141414;
-}
-
-.neu-menu-item a {
-  color: #f5f5f5;
-}
-
-.neu-menu-item.logo {
-  color: #141414;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-}
-
-.neu-menu-item.logo img {
-  width: 125px;
-  height: 125px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-.menu-images {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 12px;
-}
-
-.menu-images .avatar {
-  width: 120px;
-  height: 120px;
-  margin: 12px;
-}
-
-.neu-menu-item:hover>#visible-section-university {
-  display: flex;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  min-width: 1350px;
-}
-
-
-#visible-section-university {
-  display: none;
-  background-color: #f5f5f5;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#visible-section-university .university-main-menu li:last-child {
-  border: none;
-}
-
-#visible-section-university .university-main-menu {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background-color: #fff;
-}
-
-#visible-section-university .university-main-menu li {
-  padding: 18px 24px;
-  border-bottom: 1px solid #e0e0e0;
-  transition: 0.2s ease-in-out;
-}
-
-#visible-section-university .university-main-menu li:hover {
-  border-left: 4px solid #141414;
-  background-color: #f5f5f5;
-}
-
-#visible-section-university .university-sub-menu-container {
-  padding: 12px 24px;
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-}
-
-#visible-section-university .university-sub-menu-container .university-sub-menu-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: #141414;
-  margin: 12px 0;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #d6d6d6;
-}
-
-#visible-section-university .university-sub-menu-container .university-sub-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  text-transform: capitalize;
-}
-
-#visible-section-university .university-sub-menu-container .university-sub-menu a {
-  color: #6e6e6e;
-  display: flex;
-  gap: 12px;
-  transition: 0.2s ease-in-out all;
-  align-items: center;
-}
-
-#visible-section-university .university-sub-menu-container .university-sub-menu a:hover {
-  color: #141414;
-}
-
-.i-color-gray {
-  color: #9c9c9c !important;
-}
-
-#header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-
-}
-
-#sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  transition: left 0.3s ease;
-} */
-
-
 
 .gallery {
   display: flex;
@@ -10648,3 +10428,548 @@ body.lb-disable-scrolling {
 .options li:hover {
   background-color: #f2f2f2;
 }
+
+
+
+
+/* Dilek ve Öneri Formu */
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+    width: 25%;
+    min-width: 150px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f47920;
+    box-shadow: 0 0 8px rgba(244, 121, 32, 0.2);
+    outline: none;
+}
+
+.form-group input[type="submit"],
+.form-group .reset-btn {
+    background-color: #f47920;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 48%;
+    text-align: center;
+
+}
+
+.form-group input[type="submit"]{
+
+background-color: #f47920;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+
+}
+
+.form-group input[type="submit"]:hover,
+.form-group .reset-btn:hover {
+    background-color: #e05555;
+}
+
+.form-group .reset-btn {
+    background-color: #e05555;
+}
+
+.form-group .reset-btn:hover {
+    background-color: #b33a3a;
+}
+
+.required {
+    color: orange;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.remove-btn {
+    background-color: #e05555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #b33a3a;
+}
+
+.form-group .team-member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group .team-member input {
+    width: calc(50% - 5px);
+}
+
+.form-group .team-member .input-container {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+}
+
+.form-group #add-btn {
+    background: #f47920;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group #add-btn:hover {
+    background-color: #e05555;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+    }
+}
+
+#teknoloji_grubu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#teknoloji_grubu label {
+    width: 30%;
+}
+
+/* Buton grubu ve stil */
+.form-group.buttons {
+    display: flex;
+    justify-content: space-between; /* Butonları yan yana hizalamak için */
+    gap: 10px;
+}
+
+.reset-btn, .submit-btn {
+    padding: 15px 25px; /* Butonları büyütmek için */
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%;
+}
+
+.reset-btn {
+    background-color: #e05555; /* Temizle butonu için arka plan rengi */
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #b33a3a; /* Temizle butonu için hover rengi */
+}
+
+.submit-btn {
+    background-color: #f47920; /* Gönder butonu için arka plan rengi */
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #e05555; /* Gönder butonu için hover rengi */
+}
+
+
+/* Yeni Pano CSS*/
+
+
+.word {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-link {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    width: 220px; /* Genişliği artırarak daha belirgin yapar */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* İçerik konumlandırmasını sağlamak için */
+    overflow: hidden; /* İçeriğin taşmasını engeller */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-icon {
+    width: 80px; /* İkon boyutunu artırır */
+    height: 80px;
+    margin-bottom: 10px; /* İkon ile yazı arasına boşluk ekler */
+}
+
+.form-title {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    border: 1px solid #333; /* Çerçeve ekler */
+    border-radius: 8px; /* Çerçevenin köşelerini yuvarlatır */
+    padding: 10px; /* Çerçeve içindeki yazıya boşluk ekler */
+    box-sizing: border-box; /* Padding ve border'ı genişlikte hesaplar */
+}
+
+/* Responsive tasarım */
+@media (max-width: 600px) {
+    .form-link {
+        width: 100%;
+    }
+}
+
+/* İdari Personel Profili CSS*/
+
+
+
+.personnel {
+    width: 100%; /* Genişlik yüzde olarak ayarlandı */
+    max-width: 800px; /* Maksimum genişlik ayarlandı */
+    margin: 40px auto; /* Kenar boşlukları artırıldı */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Padding dahil */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Küçük ekranlarda satır kayması için */
+}
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Küçük ekranlar için alt boşluk */
+    flex-shrink: 0; /* Resmin küçülmesini engellemek için */
+}
+
+.info {
+    flex: 1; /* Bilgi bölümünün kalan alanı kaplaması için */
+}
+
+.info h2 {
+    margin: 0;
+    color: #333;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 100%;
+    box-sizing: border-box; /* Padding dahil */
+}
+
+.education-content {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%; /* Genişliği tam olarak ayarlandı */
+    box-sizing: border-box; /* Padding dahil */
+    max-height: 200px; /* Maksimum yükseklik ayarlandı */
+    overflow-y: auto; /* Dikey kaydırma etkinleştirildi */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Medya sorguları */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column; /* Küçük ekranlar için dikey hizalama */
+        align-items: flex-start; /* İçeriği sola hizalama */
+    }
+
+    .profile-pic {
+        margin-right: 0;
+    }
+
+    .info h2 {
+        font-size: 24px; /* Başlık boyutunu küçült */
+    }
+
+    .accordion {
+        font-size: 16px; /* Buton yazı boyutunu küçült */
+    }
+
+    th, td {
+        font-size: 14px; /* Tablo yazı boyutunu küçült */
+    }
+
+    .panel {
+        padding: 0 10px; /* Panelin iç boşluğunu küçült */
+    }
+
+    .education-content {
+        padding: 5px; /* Eğitim içeriğinin padding'ini küçült */
+    }
+}
+
+
+/* AKADEMİK BİRİMLER ORGANİZASYON YAPISI CSS*/
+
+ .pdf-viewer-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .pdf-viewer-container h2 {
+            text-align: center;
+            color: #0066cc;
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .pdf-viewer-container iframe {
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            height: 500px;
+        }
+
+        .pdf-viewer-container iframe:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: scale(1.01);
+        }
+
+ /* BİRİM AĞACI CSS*/       
+
+.departments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.department {
+    flex: 1 1 calc(50% - 20px); /* İki bölüm yan yana sığacak şekilde genişlik ayarlandı */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.department h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.department h3 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.department h3 a:hover {
+    color: #f47920; /* Turuncu renk */
+}
+
+.department ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.department li {
+    margin-bottom: 8px;
+}
+
+.department a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.department a:hover {
+    color: #f47920; /* Turuncu renk */
+}
+
+/* Mobil uyumlu tasarım */
+@media (max-width: 768px) {
+    .department {
+        flex: 1 1 100%; /* Mobilde bölümler alt alta sıralanır */
+    }
+}
+
+/* HABER SAYFASI CSS*/    
+
+ .text-resizer {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .text-resizer button {
+            font-size: 16px;
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #FFA500; /* Turuncu */
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .text-resizer button:hover {
+            background-color: #FF8C00; /* Daha koyu turuncu */
+            transform: translateY(-2px);
+        }
+        .text-resizer button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        #content {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .course__img .details {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #555;
+        }
+        .course__img .details .date, .course__img .details .views {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .course__img .details i {
+            color: #FFA500; /* Turuncu */
+        }
+
+

@@ -24,6 +24,10 @@
 21. Counter Js
 22. Parallax Js
 23. InHover Active Js
+24. idari Personel Profili Js
+25. Haber Sayfası Js
+
+
 
 ****************************************************/
 
@@ -36,6 +40,7 @@
 	windowOn.on('load',function() {
 		$("#loading").fadeOut(500);
 	});
+
 
 	////////////////////////////////////////////////////
     // 02. Mobile Menu Js
@@ -166,6 +171,8 @@
 });
 
 
+
+
 	////////////////////////////////////////////////////
     // 11. Tesimonial Js
 	var tesimonialThumb = new Swiper('.testimonial-nav', {
@@ -275,6 +282,7 @@
 		return false;
 	});
 
+////////////////////////////////////////////////////
 
 
 
@@ -320,10 +328,81 @@
 		}); 
 	};
 
+
+
 	////////////////////////////////////////////////////
     // 23. InHover Active Js
 	$('.hover__active').on('mouseenter', function () {
 		$(this).addClass('active').parent().siblings().find('.hover__active').removeClass('active');
 	});
+
+	////////////////////////////////////////////////////
+    // 24. idari Personel Profili Js
+
+    document.addEventListener("DOMContentLoaded", function () {
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+});
+
+
+////////////////////////////////////////////////////
+    // 25. Haber Sayfası Js
+document.addEventListener('DOMContentLoaded', function() {
+    var increaseCount = 0;
+    var decreaseCount = 0;
+    var maxResize = 3;
+
+    function resizeText(action) {
+        var paragraphs = document.querySelectorAll('#content p');
+
+        if (action === 'increase' && increaseCount < maxResize) {
+            for (var i = 0; i < paragraphs.length; i++) {
+                var style = window.getComputedStyle(paragraphs[i], null).getPropertyValue('font-size');
+                var currentSize = parseFloat(style);
+                paragraphs[i].style.fontSize = (currentSize + 2) + 'px';
+            }
+            increaseCount++;
+            decreaseCount = Math.max(0, decreaseCount - 1);
+        } else if (action === 'decrease' && decreaseCount < maxResize) {
+            for (var i = 0; i < paragraphs.length; i++) {
+                var style = window.getComputedStyle(paragraphs[i], null).getPropertyValue('font-size');
+                var currentSize = parseFloat(style);
+                paragraphs[i].style.fontSize = (currentSize - 2) + 'px';
+            }
+            decreaseCount++;
+            increaseCount = Math.max(0, increaseCount - 1);
+        } else if (action === 'reset') {
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = '16px'; // or any default size you prefer
+            }
+            increaseCount = 0;
+            decreaseCount = 0;
+        }
+
+        document.getElementById('increaseBtn').disabled = (increaseCount >= maxResize);
+        document.getElementById('decreaseBtn').disabled = (decreaseCount >= maxResize);
+    }
+
+    document.getElementById('increaseBtn').addEventListener('click', function() {
+        resizeText('increase');
+    });
+    document.getElementById('decreaseBtn').addEventListener('click', function() {
+        resizeText('decrease');
+    });
+    document.getElementById('resetBtn').addEventListener('click', function() {
+        resizeText('reset');
+    });
+});
+
 
 })(jQuery);
